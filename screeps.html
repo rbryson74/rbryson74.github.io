@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/themes/default/style.min.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
+
+</head>
+<body>
+    <!--  wrapper -->
+    <div id="header">
+        <h1>Screeps Object Browser</h1>
+    </div>
+    <div class="colmask leftmenu">
+        <div class="colleft">
+            <div class="col1">
+                <div id="infoarea"></div>
+            </div>
+            <div class="col2">
+                <div id="container"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <script type="application/javascript">
+        $(function() {
+            $('#container').jstree({
+                'core' : {
+                    'data' : {
+                        url: './screeps.json'
+                    }
+                }
+            });
+            $('#container').on("changed.jstree", function (e, data) {
+                $("#infoarea").html(data.instance.get_node(data.selected).data);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+[
+  {
+    "text" : "screeps",
+    "state" : {"opened" : true },
+    "children" : [
+      {
+        "text" : "Game",
+        "state" : {"opened" : true, "selected" : true },
+        "data" : "<h2>This is the main Game object</h2><br/>Game",
+        "children" : [
+          {
+            "text" : "constructionSites",
+            "data" : "<h2>Game.constructionSites</h2><br/>A hash containing all your construction sites with their id as hash keys.",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "cpu",
+            "data" : "<h2>Game.cpu</h2><br/>An object containing information about your CPU usage",
+            "state" : { "selected" : false },
+            "children" : [
+              {
+                "text" : "limit",
+                "data" : "<h2>Game.cpu.limit</h2><br/>Your CPU limit depending on your Global Control Level.",
+                "state" : { "selected" : false }
+              },
+              {
+                "text" : "tickLimit",
+                "data" : "<h2>Game.cpu.tickLimit</h2><br/>An amount of available CPU time at the current game tick.<br/>It can be higher than Game.cpu.limit.",
+                "state" : { "selected" : false }
+              },
+              {
+                "text" : "bucket",
+                "data" : "<h2>Game.cpu.bucket</h2><br/>An amount of unused CPU accumulated in your bucket.",
+                "state" : { "selected" : false }
+              }
+            ]
+          },
+          {
+            "text" : "creeps",
+            "data" : "<h2>This is the main Game object</h2><br/>Game",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "flags",
+            "data" : "<h2>This is the main Game object</h2><br/>Game",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "gcl",
+            "data" : "<h2>This is the main Game object</h2><br/>Game",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "map",
+            "data" : "<h2>This is the main Game object</h2><br/>Game",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "market",
+            "data" : "<h2>This is the main Game object</h2><br/>Game",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "resources",
+            "data" : "<h2>This is the main Game object</h2><br/>Game",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "rooms",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "spawns",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "structures",
+            "state" : { "selected" : false }
+          },
+          {
+            "text" : "time",
+            "state" : { "selected" : false }
+          }
+        ]
+      },
+      {
+        "text" : "Room",
+        "state" : {"opened" : true },
+        "children" : [
+
+        ]
+      }
+    ]
+  }
+]
+
+
+

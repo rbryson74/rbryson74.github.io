@@ -1,1 +1,6 @@
 *.sh
+.idea/
+screeps/
+/jquery-3.1.1.js
+/css/
+css/
